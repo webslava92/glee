@@ -1,0 +1,13 @@
+body{
+  color: #8b8b8b;
+  font-size: 16px;
+  line-height: 30px;
+  @extend %DMSans-500;
+  height: 4201px;
+}
+
+.container{
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
