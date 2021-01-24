@@ -1,10 +1,15 @@
+@import 'reset';
 @import 'vars';
 @import 'fonts';
-@import 'reset';
 @import 'global';
 
 .header{
   padding: 48px 0 45px;
+  &__container{
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
   &__inner{
   display: flex;
   justify-content: space-between;
@@ -29,8 +34,8 @@
 .user-nav{
   display: flex;
   &__search{
-    width: 51px;
-    height: 51px;
+    width: 50px;
+    height: 50px;
     background-color: $search;
     border-radius: 50%;
     margin-right: 21px;
@@ -43,7 +48,7 @@
     display: flex;
     justify-content: space-around;
     width: 178px;
-    height: 51px;
+    height: 50px;
     background-color: $preferences;
     border-radius: 25px;
   }
@@ -53,15 +58,17 @@
   &__preferences-link{
     position: relative;
     width: 50%;
-    margin: 17px auto;
+    height: 32px;
+    margin: 8px auto;
+
   }
   &__preferences-img{
     display: block;
-    margin: 0 auto;
+    margin: 7px auto;
   }
   &__preferences-num{
     position: absolute;
-    top: -8px;
+    top: -3px;
     right: 22px;
     width: 16px;
     height: 16px;
@@ -74,8 +81,8 @@
     color: $title;
   }
   &__catalog-link{
-    width: 51px;
-    height: 51px;
+    width: 50px;
+    height: 50px;
     background-color: $accent;
     border-radius: 50%;
     margin-left: 18px;
@@ -85,6 +92,92 @@
     margin: 16px auto;
   }
 }
+
+.footer-top{
+  padding: 99px 0 104px;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  justify-content: space-between;
+  &__items{
+    width: 270px;
+  }
+  &__items + .footer-top__items{
+    margin-left: 30px;
+  }
+  &__logo{
+    margin-bottom: 16px;
+    display: block;
+  }
+  &__address,
+  &__email,
+  &__phone{
+    display: flex;
+    width: 200px;
+    margin-bottom: 8px;
+    @extend %Rubik-400;
+    color: #7b7b7b;
+  }
+  &__title{
+    color: #1f2044;
+    @extend %DMSans-700;
+    font-size: 16px;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin: 16px 0 19px;
+  }
+  &__text{
+    @extend %Rubik-400;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
+  &__form{
+    display: flex;
+    max-width: 270px;
+  }
+  &__form-input{
+    background-color: #fef7f0;
+    max-width: 170px;
+    border: none;
+    padding: 3px 77px 3px 15px;
+    &::placeholder{
+      color: #234969;
+      font-size: 12px;
+      @extend %DMSans-400;
+    }
+  }
+  &__form-btn{
+    @extend %btn;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+.footer-bottom{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  &__nav-menu{
+    line-height: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__nav-item + .footer-bottom__nav-item{
+    padding-left: 13px;
+    padding-right: 13px;
+    border-left: 2px solid #7b7b7b;
+  }
+  &__nav-item:nth-child(1){
+    padding-right: 13px;
+  }
+  &__nav-link{
+    font-size: 12px;
+    line-height: 1 !important;
+    padding: 0;
+    @extend %Rubik-400;
+  }
+}
+
 
 
 
