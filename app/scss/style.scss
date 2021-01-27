@@ -27,7 +27,7 @@
     padding-left: 34px;
   }
   &__list-link{
-    color: $header-title;
+    color: #436372;
     @extend %DMSans-700;
     &:hover{
       color: $accent;
@@ -96,8 +96,8 @@
   }
   &__preferences-num{
     position: absolute;
-    top: -3px;
-    right: 22px;
+    top: -2px;
+    right: 0;
     width: 16px;
     height: 16px;
     border-radius: 50%;
@@ -106,7 +106,7 @@
     line-height: 16px;
     text-align: center;
     margin-right: 5px;
-    color: $title;
+    color: $direct;
   }
   &__catalog-link{
     width: 50px;
@@ -239,7 +239,7 @@
   &__title{
     font-size: 70px;
     line-height: 72px;
-    color: $title;
+    color: $direct;
     margin-bottom: 20px;
     @extend %Rubik-500;
   }
@@ -250,7 +250,7 @@
     max-width: 370px;
     margin-bottom: 42px;
   }
-  &__link{
+  &__btn{
     font-size: 18px;
     line-height: 12px;
     color: #fff;
@@ -262,7 +262,7 @@
       background-color: #b3d0e0;
     }
   }
-  &__link-arrow{
+  &__btn-arrow{
     padding-left: 50px;
     fill: #fff;
   }
@@ -290,7 +290,7 @@
       &.slick-active{
         button{
           background-color: #fff;
-          color: $title;
+          color: $direct;
         }
       }
       &:hover{
@@ -335,6 +335,192 @@
   }
 }
 
+.product-week{
+  padding: 70px 0 120px;
+  transition: all .3s;
+  &__catalog{
+    margin-bottom: 185px;
+  }
+  &__filter-btn{
+    display: flex;
+    justify-content: center;
+  }
+  &__btn + .product-week__btn{
+    margin-left: 30px;
+  }
+  &__btn{
+    border: none;
+    background-color: transparent;
+    margin-bottom: 75px;
+    @extend %DMSans-700;
+    color: $default;
+    &:hover{
+      color: $title;
+    }
+  }
+  &__btn.mixitup-control-active{
+    color: $title;
+  }
+  &__content{
+    display: grid;
+    min-height: 800px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+    background-color: #fff;
+  }
+  &__item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 270px;
+    min-height: 380px;
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    &:hover .product-week__controls{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      top: 50%;
+    }
+  }
+  &__item-img{
+    max-width: 100%;
+    margin: auto 0;
+  }
+  &__controls{
+    display: none;
+  }
+  &__control-search,
+  &__control-cart,
+  &__control-heart{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+  }
+  &__control-search{
+    background-color: #fff;
+    &:hover{
+      background-color: #e2f2fa;
+    }
+  }
+  &__control-cart{
+    background-color: #a3bac7;
+    margin-left: 15px;
+    &:hover{
+      background-color: $hover-link;
+    }
+  }
+  &__control-heart{
+    background-color: #fff;
+    margin-left: 15px;
+    &:hover{
+      background-color: #e2f2fa;
+    }
+  }
+  &__item-title{
+    line-height: 40px;
+    align-items: center;
+    color: $direct;
+    @extend %DMSans-700;
+  }
+  &__item-price{
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 16px;
+    color: $accent;
+    @extend %DMSans-700;
+  }
+  &__top-items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__top-item{
+    display: flex;
+    justify-content: space-between;
+    background-color: #feefe2;
+    width: 100%;
+    height: 388px;
+  }
+  &__top-item + .product-week__top-item{
+    margin-left: 30px;
+  }
+  &__top-img{
+    margin-top: -95px;
+    margin-left: 137px;
+    max-height: 100%;
+  }
+  &__top-info{
+    margin-left: 25px;
+    margin-right: auto;
+  }
+  &__top-title{
+    margin: 90px 0 20px;
+    font-size: 26px;
+    color: $direct;
+  }
+  &__top-text{
+    line-height: 30px;
+    max-width: 335px;
+    margin-bottom: 32px;
+  }
+  &__top-btn{
+    font-size: 18px;
+    line-height: 12px;
+    color: #436372;
+    background-color: transparent;
+    @extend %Rubik-500;
+    padding: 24px 20px 20px 27px;
+    border: 1px solid #436372;
+    border-radius: 8px;
+    transition: all .3s;
+    &:hover{
+      background-color: #b3d0e0;
+      color: #fff;
+      border: 1px solid #b3d0e0;
+    }
+    &:hover .product-week__top-btn-arrow{
+      fill: #fff;
+    }
+  }
+  &__top-btn-arrow{
+    padding-left: 50px;
+    fill: #436372;
+  }
+}
+
+.video-design{
+  background-image: url('../images/video-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__svg .cls-1, .cls-2{
+    fill: #a3bbc8;
+    &:hover{
+      fill: $hover-link;
+    }
+  }
+  &__svg .cls-1{
+    opacity: 0.4;
+  }
+  &__svg .cls-3{
+    fill: #fff;
+    fill-rule: evenodd;
+  }
+}
+
+
+
+  
 
 
 
