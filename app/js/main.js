@@ -8,15 +8,23 @@ $(function(){
     autoplayspeed: 2000
   });
 
-  $('[data-fancybox]').fancybox({
-    protect: true
+  
+  var containerEl1 = document.querySelector('[data-ref="mix1"]');
+  var containerEl2 = document.querySelector('[data-ref="mix2"]');
+  
+  var mixer1 = mixitup('.product-week__content', {
+    selectors: {
+      control: '.filter-1'
+    }
   });
 
-  var mixer = mixitup('.product-week__content');
-  
-/* 
-  $('.product-week__btn').on('click', function () {
-    $('.product-week__btn').toggleClass('product-week__btn--active');
-  }) */
+  var mixer2 = mixitup('.new-design__items', {
+    selectors: {
+      control: '.filter-2'
+    }
+  });
+
+
+  /* var mixer = mixitup('.product-week__content, .new-design__items'); */
 
 });
