@@ -21,6 +21,11 @@ $title: #191919;
   font-weight: 700;
 }
 
+%Rubik-300{
+  font-family: 'Rubik-Light', sans-serif;
+  font-weight: 300;
+}
+
 %Rubik-400{
   font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
@@ -48,6 +53,20 @@ $title: #191919;
   @extend %DMSans-400;
   font-size: 14px;
   line-height: 21px;
+}
+
+%btn-arrow{
+  font-size: 18px;
+  line-height: 12px;
+  color: #fff;
+  background-color: $accent;
+  @extend %Rubik-500;
+  padding: 24px 20px 20px 27px;
+  transition: all .3s;
+  border-radius: 8px;
+  &:hover{
+    background-color: #b3d0e0;
+  }
 }
 
 @function max($numbers...) {
