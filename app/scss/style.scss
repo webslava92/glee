@@ -124,6 +124,19 @@
   }
 }
 
+.top{
+  background-color: #edf1f4;
+  height: 125px;
+  text-align: center;
+  &__page-title{
+    padding: 30px 0 9px;
+    font-size: 36px;
+    line-height: 24px;
+    @extend %Rubik-300;
+    color: #222933;
+  }
+}
+
 .footer-top{
   padding: 99px 0 104px;
   border-bottom: 1px solid #dae4e9;
@@ -594,7 +607,7 @@
   &__bottom{
     position: relative;
     background-color: #fef7f0;
-    min-height: 435px;
+    min-height: 170px;
   }
   &__items{
     position: absolute;
@@ -639,17 +652,38 @@
   }
   &__details{
     display: flex;
+    align-items: center;
     margin: 14px 0 14px 30px;
+  }
+  &__info-date,
+  &__info-author{
+    padding-left: 26px;
+    position: relative;
+    line-height: 1;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      left: 0;
+      top: -4px;
+    }
   }
   &__info-date{
     margin-right: 30px;
   }
+  &__info-date::before{
+    background-image: url('../images/icons/time.svg');
+  }
+  &__info-author::before{
+    background-image: url('../images/icons/user.svg');
+  }
 }
 
 .partners{
-  padding-top: 268px;
-  height: 266px;
+  background-color: #fef7f0;
   &__items{
+    height: 266px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -657,7 +691,265 @@
   }
 }
 
+.modal{
+  padding-top: 118px;
+  margin: 0 auto;
+  max-width: 500px;
+  margin: 0 auto 120px;
+  &__lable{
+    display: block;
+    @extend %Rubik-400;
+    color: #436372;
+  }
+  &__input{
+    display: block;
+    width: 100%;
+    border: 2px solid #f6f6f6;
+    height: 60px;
+    padding: 0 15px;
+    margin-bottom: 26px;
+  }
+  &__btn{
+    display: block;
+    @extend %Rubik-500;
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    background-color: $accent;
+    padding: 14px 0;
+    border: none;
+    cursor: pointer;
+  }
+  &__btn-account{
+    display: block;
+    @extend %Rubik-500;
+    font-size: 18px;
+    color: $direct;
+    width: 100%;
+    background-color: transparent;
+    padding: 14px 0;
+    border: 2px solid $accent;
+    cursor: pointer;
+  }
+  &__choice{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin-bottom: 30px;
+    color: #436372;
+    border-bottom: 2px solid #f6f6f6;
+  }
+  &__arror-link{
+    display: block;
+    color: #436372;
+  }
+  &__text{
+    color: #436372;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+}
 
+.about{
+  margin: 122px 0;
+  &__top{
+    display: flex;
+  }
+  &__content{
+    width: 600px;
+    padding-top: 84px;
+    padding-left: 50px;
+  }
+  &__experience{
+    display: flex;
+    margin-bottom: 47px;
+  }
+  &__experience-num{
+    @extend %Rubik-700;
+    font-size: 140px;
+    line-height: 1;
+    color: $accent;
+  }
+  &__experience-items{
+    margin: 38px 10px 3px 25px;
+  }
+  &__experience-text{
+    @extend %Rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color: $direct;
+  }
+  &__title{
+    @extend %DMSans-700;
+    color: $direct;
+    font-size: 36px;
+    line-height: 32px;
+  }
+  &__text{
+    padding: 40px 33px 60px 0;
+    max-width: 515px;
+  }
+  &__numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: center center;
+    padding: 40px 0;
+    border-top: 2px solid #e6eaf0;
+    width: 100%;
+    @extend %DMSans-700;
+    color: $direct;
+    font-size: 36px;
+  }
+  &__numbers-num{
+    position: relative;
+    padding: 0 10px 0 60px;
+    span{
+      font-size: 16px;
+      color: #4c4c4c;
+      position: absolute;
+      bottom: -30px;
+      left: 60px;
+    }
+  }
+  &__numbers-item{
+    padding: 0 34px;
+    height: 64px;
+  }
+  &__numbers-border{
+    border-left: 2px solid #e6eaf0;
+    border-right: 2px solid #e6eaf0;
+  }
+  &__numbers-project{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/project-icon.svg');
+      width: 36px;
+      height: 38px;
+      bottom: -15px;
+      left: 0;
+    }
+  }
+  &__numbers-revenue{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/revenue.svg');
+      width: 43px;
+      height: 39px;
+      bottom: -15px;
+      left: 0;
+    }
+  }
+  &__numbers-awards{
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      background-image: url('../images/icons/awards.svg');
+      width: 42px;
+      height: 40px;
+      bottom: -15px;
+      left: 0;
+    }
+  }
+}
+
+.statistics{
+  background-color: $preferences;
+  &__items{
+    display: flex;
+    justify-content: space-around;
+    height: 320px;
+  }
+  &__item{
+    display: flex;
+    margin: auto 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__num{
+    margin: 19px auto;
+  }
+  &__text{
+    @extend %DMSans-700;
+    color: $direct;
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+.team{
+  padding: 112px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    max-width: 370px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 30px;
+    color: $direct;
+    margin: 27px 0 40px;
+    max-width: 287px;
+  }
+  &__link{
+    @extend %btn-arrow;
+  }
+  &__items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+  &__item-infobox{
+    display: inline-block;
+    background-color: #fff;
+    margin-top: -48px;
+    width: 320px;
+    height: 110px;
+    box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+  }
+  &__item-infobox-inner{
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 20px 28px 23px;
+  }
+  &__item-info{
+    margin: auto 0;
+  }
+  &__item-name{
+    @extend %DMSans-700;
+    color: $direct;
+    font-size: 22px;
+    line-height: 26px;
+    padding-bottom: 10px;
+  }
+  &__item-post{
+    @extend %Rubik-400;
+    line-height: 30px;
+    color: #565872;
+  }
+  &__social-links{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  &__social-link{
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f6f6f6;
+    margin-left: 10px;
+  }
+}
 
 
 
@@ -665,3 +957,4 @@
 
 
 @import 'media';
+
