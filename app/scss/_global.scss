@@ -72,3 +72,32 @@ a{
   }
 }
 
+.pagination{
+  display: flex;
+  justify-content: center;
+  .pagination__list{
+    display: flex;
+    align-items: center;
+  }
+  &__link{
+    display: block;
+    color: $direct;
+    padding: 8px 19px;
+    border: 1px solid $accent;
+    margin-left: 15px;
+    @extend %DMSans-400;
+    font-size: 16px;
+    line-height: 30px !important;
+    &:hover{
+      background-color: $accent;
+      color: #fff;
+    }
+  }
+  &__link--active{
+    background-color: $accent;
+    color: #fff;
+  }
+  &__prev{
+      display: none;
+    }
+}
