@@ -53,6 +53,8 @@ $title: #191919;
   @extend %DMSans-400;
   font-size: 14px;
   line-height: 21px;
+  cursor: pointer;
+  transition: all .3s;
 }
 
 %btn-arrow{
