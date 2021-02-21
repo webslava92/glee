@@ -832,6 +832,10 @@
     padding-left: 26px;
     position: relative;
     line-height: 1;
+    color: #222933;
+    padding-left: 0;
+    display: flex;
+    align-items: center;
     &::before{
       content: '';
       position: absolute;
@@ -844,11 +848,17 @@
   &__info-date{
     margin-right: 30px;
   }
-  &__info-date::before{
-    background-image: url('../images/icons/time.svg');
+  &__info-dateicon{
+    margin-right: 6px;
+    path{
+      fill: #222933;
+    }
   }
-  &__info-author::before{
-    background-image: url('../images/icons/user.svg');
+  &__info-authoricon{
+    margin-right: 6px;
+    path{
+      fill: #222933;
+    }
   }
 }
 
@@ -1612,6 +1622,171 @@
     }
   }
 }
+
+.blog-page{
+  padding: 120px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__content{
+    width: 830px;
+    margin-right: 70px;
+  }
+  &__aside{
+    width: 270px;
+  }
+  .articles__item{
+    max-width: 100%;
+    width: 100%;
+    padding-bottom: 40px;
+    margin-left: 0;
+  }
+  .articles__item-img{
+    width: 100%;
+  }
+  .articles__item-content{
+    width: 100%;
+  }
+  .articles__link-news,
+  .articles__info-wrapper{
+    display: none;
+  }
+  .articles__details{
+    background-color: $accent;
+    color: #fff;
+    display: inline-block;
+    width: 275px;
+    height: 70px;
+    margin: 0;
+    position: absolute;
+    margin-top: -70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .articles__info-date,
+  .articles__info-author{
+    font-size: 12px;
+    color: #fff;
+    margin: 0;
+  }
+  .articles__info-dateicon{
+    path{
+      fill: #fff;
+    }
+  }
+  .articles__info-authoricon{
+    path{
+      fill: #fff;
+    }
+  }
+  &__item-box{
+    height: 100%;
+    margin-bottom: 40px;
+  }
+  &__item-title{
+    @extend %Rubik-400;
+    font-size: 36px;
+    color: #333333;
+    margin: 40px 0;
+  }
+  &__item-text{
+    @extend %Rubik-400;
+    color: #333333;
+    padding-bottom: 40px;
+  }
+  &__item-btn{
+    padding: 21px 19px;
+    border: 1px solid $accent;
+    color: $accent;
+    transition: all .3s;
+    margin-bottom: 40px;
+    cursor: pointer;
+    path{
+      fill: $accent;
+    }
+    &:hover{
+      background-color: $accent;
+      color: #fff;
+      path{
+        fill: #fff;
+      }
+    }
+  }
+  .pagination{
+    justify-content: left;
+  }
+}
+
+
+
+.search-form{
+  width: 100%;
+  position: relative;
+  margin-bottom: 55px;
+  &__input{
+    border: 2px solid $search;
+    width: 233px;
+    height: 43px;
+    padding-right: 20px;
+    border-radius: 8px;
+    outline: none;
+  }
+  &__btn{
+    content: '';
+    position: absolute;
+    margin-left: -15px;
+    border: none;
+    border-radius: 8px;
+    background-color: $search;
+    width: 48px;
+    height: 43px;
+    cursor: pointer;
+    &:hover{
+      background-color: $accent;
+      path{
+        fill: #fff;
+      }
+    }
+  }
+}
+
+.filter-resentpost{
+  padding-bottom: 22px;
+  &__items{
+    display: block;
+  }
+  &__item{
+    padding-bottom: 22px;
+    display: flex;
+    align-items: center;
+  }
+  &__item-imglink{
+    min-width: 71px;
+    width: 71px;
+    height: 71px;
+    margin-right: 20px;
+  }
+  &__item-link{
+  }
+  &__item-title{
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 5px;
+  }
+  .articles__info-date{
+    font-size: 12px;
+    color: #9a9a9a;
+    text-transform: uppercase;
+  }
+  .articles__info-dateicon{
+    path{
+      fill: #9a9a9a;
+    }
+  }
+}
+
 
 
 
