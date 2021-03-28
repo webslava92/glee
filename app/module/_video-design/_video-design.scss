@@ -1,0 +1,23 @@
+.video-design{
+  background-image: url('../images/video-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0 60px;
+  &__svg .cls-1, .cls-2{
+    fill: #a3bbc8;
+    &:hover{
+      fill: $hover-link;
+    }
+  }
+  &__svg .cls-1{
+    opacity: 0.4;
+  }
+  &__svg .cls-3{
+    fill: #fff;
+    fill-rule: evenodd;
+  }
+}

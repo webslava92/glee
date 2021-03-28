@@ -1,0 +1,109 @@
+.top-slider{
+  background-image: url(../images/top-slider/slider-bg.png);
+  background-repeat: no-repeat;
+  background-position: 90% center;
+  background-color: $preferences;
+  padding: 220px 185px 45px 300px;
+  height: 820px;
+  &__item{
+    display: flex !important;
+    justify-content: space-between;
+  }
+  &__title{
+    font-size: 70px;
+    line-height: 72px;
+    color: $direct;
+    margin-bottom: 20px;
+    @extend %Rubik-500;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 30px;
+    @extend %Rubik-400;
+    max-width: 370px;
+    margin-bottom: 42px;
+  }
+  &__btn{
+    font-size: 18px;
+    line-height: 12px;
+    color: #fff;
+    background-color: $accent;
+    @extend %Rubik-500;
+    padding: 24px 20px 20px 27px;
+    transition: all .3s;
+    &:hover{
+      background-color: #b3d0e0;
+    }
+  }
+  &__btn-arrow{
+    padding-left: 50px;
+    fill: #fff;
+  }
+  &__img{
+    padding-top: 45px;
+  }
+  .slick-dots{
+    display: flex;
+    justify-content: center;
+    margin-top: 205px;
+    li{
+      padding: 0 10px;
+      line-height: 0;
+      button{
+        transition: all .3s;
+        padding: 0;
+        background-color: #fde3cc;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+        color: #667983;
+        cursor: pointer;
+      }
+      &.slick-active{
+        button{
+          background-color: #fff;
+          color: $direct;
+        }
+      }
+      &:hover{
+        button{
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.advantages{
+  display: flex;
+  height: 170px;
+  background-color: #fef7f0;
+  &__item{
+    display: flex;
+    width: 590px;
+    justify-content: center;
+    .advantage__content{
+      margin: auto 0;
+    }
+  }
+  &__item + .advantages__item{
+    border-left: 1px solid #e8e4df;
+  }
+  &__link{
+    margin: auto 0;
+  }
+  &__img{
+    margin-right: 24px;
+  }
+  &__title{
+    font-size: 18px;
+    line-height: 40px;
+    @extend %DMSans-700;
+    color: #414141;
+  }
+  &__text{
+    width: 199px;
+    @extend %DMSans-400;
+  }
+}

@@ -1,0 +1,58 @@
+.new-design{
+  padding: 60px 0 60px;
+  text-align: center;
+  &__btn{
+    border: none;
+    color: $default;
+    @extend %DMSans-700;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover{
+      color: $title;
+    }
+  }
+  &__btn + .new-design__btn{
+    margin-left: 30px;
+  }
+  &__btn.mixitup-control-active{
+    color: $title;
+  }
+  &__items{
+    display: grid;
+    grid-gap: 30px;
+    margin-top: 77px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  &__item{
+    position: relative;
+    background-color: #f8f8f8;
+    min-height: 245px;
+  }
+  &__content{
+    position: absolute;
+  }
+  &__title{
+    display: block;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-top: 40px;
+    margin-left: 35px;
+    text-align: left;
+    color: $title;
+    max-width: 170px;
+    @extend %DMSans-700;
+    transition: all .3s;
+    &:hover{
+      color: $hover-link;
+    }
+  }
+  &__subtitle{
+    margin-top: 17px;
+    margin-left: 35px;
+    text-align: left;
+    color: $accent;
+    @extend %DMSans-700;
+  }
+}
