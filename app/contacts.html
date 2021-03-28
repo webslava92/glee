@@ -5,409 +5,462 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Glee</title>
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/contacts.min.css">
 </head>
 
 <body>
 
   <header class="header">
-    <div class="container container-large">
-      <div class="header__inner">
-        <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.png" alt="logo">
+  <div class="container container-large">
+    <div class="header__inner">
+      <a class="logo" href="#">
+        <img class="logo__img" src="images/logo.png" alt="logo">
+      </a>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__list-item">
+            <button class="menu__list-btn home-btn">Home +</button>
+            <ul class="menu__home">
+              <li class="menu__home-item">
+                <a class="menu__home-link" href="#">Home 1</a>
+              </li>
+              <li class="menu__home-item">
+                <a class="menu__home-link" href="#">Home 2</a>
+              </li>
+              <li class="menu__home-item">
+                <a class="menu__home-link" href="#">Home 3</a>
+              </li>
+              <li class="menu__home-item">
+                <a class="menu__home-link" href="#">Home 4</a>
+              </li>
+              <li class="menu__home-item">
+                <a class="menu__home-link" href="#">Home 5</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">About</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Services</a>
+          </li>
+          <li class="menu__list-item">
+            <button class="menu__list-btn pages-btn" href="#">Pages +</button>
+            <ul class="menu__pages">
+              <li class="menu__pages-item">
+                <a class="menu__pages-link" href="#">Page 1</a>
+              </li>
+              <li class="menu__pages-item">
+                <a class="menu__pages-link" href="#">Page 2</a>
+              </li>
+              <li class="menu__pages-item">
+                <a class="menu__pages-link" href="#">Page 3</a>
+              </li>
+              <li class="menu__pages-item">
+                <a class="menu__pages-link" href="#">Page 4</a>
+              </li>
+              <li class="menu__pages-item">
+                <a class="menu__pages-link" href="#">Page 5</a>
+              </li>
+            </ul>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">News</a>
+          </li>
+          <li class="menu__list-item">
+            <a class="menu__list-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="user-nav">
+        <a class="user-nav__search" href="#">
+          <img class="user-nav__search-img" src="images/icons/search.svg" alt="search icon">
         </a>
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <button class="menu__list-btn home-btn">Home +</button>
-              <ul class="menu__home">
-                <li class="menu__home-item">
-                  <a class="menu__home-link" href="#">Home 1</a>
-                </li>
-                <li class="menu__home-item">
-                  <a class="menu__home-link" href="#">Home 2</a>
-                </li>
-                <li class="menu__home-item">
-                  <a class="menu__home-link" href="#">Home 3</a>
-                </li>
-                <li class="menu__home-item">
-                  <a class="menu__home-link" href="#">Home 4</a>
-                </li>
-                <li class="menu__home-item">
-                  <a class="menu__home-link" href="#">Home 5</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">About</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Services</a>
-            </li>
-            <li class="menu__list-item">
-              <button class="menu__list-btn pages-btn" href="#">Pages +</button>
-              <ul class="menu__pages">
-                <li class="menu__pages-item">
-                  <a class="menu__pages-link" href="#">Page 1</a>
-                </li>
-                <li class="menu__pages-item">
-                  <a class="menu__pages-link" href="#">Page 2</a>
-                </li>
-                <li class="menu__pages-item">
-                  <a class="menu__pages-link" href="#">Page 3</a>
-                </li>
-                <li class="menu__pages-item">
-                  <a class="menu__pages-link" href="#">Page 4</a>
-                </li>
-                <li class="menu__pages-item">
-                  <a class="menu__pages-link" href="#">Page 5</a>
-                </li>
-              </ul>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">News</a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="user-nav">
-          <a class="user-nav__search" href="#">
-            <img class="user-nav__search-img" src="images/icons/search.svg" alt="search icon">
-          </a>
-          <div class="user-nav__preferences">
-            <div class="user-nav__preferences-left">
-              <a class="user-nav__preferences-link" href="#">
-                <img class="user-nav__preferences-img" src="images/icons/heart.png" alt="heart icon">
-                <span class="user-nav__preferences-num">0</span>
-              </a>
-            </div>
-            <div class="user-nav__preferences-right">
-              <a class="user-nav__preferences-link" href="#">
-                <img class="user-nav__preferences-img" src="images/icons/cart.svg" alt="cart icon">
-                <span class="user-nav__preferences-num">0</span>
-              </a>
-            </div>
+        <div class="user-nav__preferences">
+          <div class="user-nav__preferences-left">
+            <a class="user-nav__preferences-link" href="#">
+              <img class="user-nav__preferences-img" src="images/icons/heart.png" alt="heart icon">
+              <span class="user-nav__preferences-num">0</span>
+            </a>
           </div>
-          <a class="user-nav__catalog-link" href="#">
-            <img class="user-nav__catalog-link-img" src="images/icons/catalog.svg" alt="catalog icon">
-          </a>
+          <div class="user-nav__preferences-right">
+            <a class="user-nav__preferences-link" href="#">
+              <img class="user-nav__preferences-img" src="images/icons/cart.svg" alt="cart icon">
+              <span class="user-nav__preferences-num">0</span>
+            </a>
+          </div>
         </div>
+        <a class="user-nav__catalog-link" href="#">
+          <img class="user-nav__catalog-link-img" src="images/icons/catalog.svg" alt="catalog icon">
+        </a>
       </div>
     </div>
-  </header>
+  </div>
+</header>
+
   <main class="main">
+
     <section class="top">
-      <div class="container-small">
-        <h2 class="top__page-title">
-          Contact
-        </h2>
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Home</a>
-            </li>
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
+  <div class="container-small">
+    <h2 class="top__page-title">
+      Contacts
+    </h2>
+    <div class="breadcrumbs">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Home</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="#">Contacts</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
     <section class="contact">
-      <div class="container-small">
-        <div class="contact__inner">
-          <p class="contact__subtitle">Write Here</p>
-          <h3 class="contact__title">Get In Touch</h3>
-          <div class="contact__info-box">
-            <div class="contact__info-item">
-              <div class="contact__info-imgbox">
-                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="44" viewBox="0 0 31 44">
-                  <path
-                    d="M558.6,655.809l-6.584-2.917-5.674,2.51a1.651,1.651,0,0,1-1.864-.355,1.634,1.634,0,0,1-.313-1.862l4.994-10.516a1.1,1.1,0,1,1,1.972.987l-4.343,9.144,4.32-1.914a2.227,2.227,0,0,1,1.806,0l6.583,2.916h0.011l6.585-2.917a2.223,2.223,0,0,1,1.8,0l4.32,1.914-4.342-9.145a1.093,1.093,0,0,1,.174-1.275,1.107,1.107,0,0,1,1.8.288l4.994,10.518a1.656,1.656,0,0,1-2.176,2.216L567,652.892l-6.594,2.917A2.23,2.23,0,0,1,558.6,655.809Zm-1.947-7.6L547.1,632.283c-0.011-.02-0.023-0.041-0.033-0.062a13.944,13.944,0,1,1,26.39-6.327,13.691,13.691,0,0,1-1.528,6.327l-0.034.062-9.548,15.927A3.326,3.326,0,0,1,556.65,648.21Zm2.683-34.012a11.783,11.783,0,0,0-11.586,11.625,11.521,11.521,0,0,0,1.269,5.366l9.529,15.9a1.114,1.114,0,0,0,1.91,0l9.528-15.9a11.665,11.665,0,0,0-2.231-13.625,11.7,11.7,0,0,0-8.247-3.368Zm-4.884,11.7a5.051,5.051,0,1,1,5.051,5.027A5.044,5.044,0,0,1,554.449,625.894Zm2.206,0a2.845,2.845,0,1,0,2.845-2.83A2.842,2.842,0,0,0,556.655,625.894Z"
-                    transform="translate(-544 -612)" />
-                </svg>
+  <div class="container-small">
+    <div class="contact__inner">
+      <p class="contact__subtitle">Write Here</p>
+      <h3 class="contact__title">Get In Touch</h3>
+      <div class="contact__info-box">
+        <div class="contact__info-item">
+          <div class="contact__info-imgbox">
+            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="44" viewBox="0 0 31 44">
+              <path
+                d="M558.6,655.809l-6.584-2.917-5.674,2.51a1.651,1.651,0,0,1-1.864-.355,1.634,1.634,0,0,1-.313-1.862l4.994-10.516a1.1,1.1,0,1,1,1.972.987l-4.343,9.144,4.32-1.914a2.227,2.227,0,0,1,1.806,0l6.583,2.916h0.011l6.585-2.917a2.223,2.223,0,0,1,1.8,0l4.32,1.914-4.342-9.145a1.093,1.093,0,0,1,.174-1.275,1.107,1.107,0,0,1,1.8.288l4.994,10.518a1.656,1.656,0,0,1-2.176,2.216L567,652.892l-6.594,2.917A2.23,2.23,0,0,1,558.6,655.809Zm-1.947-7.6L547.1,632.283c-0.011-.02-0.023-0.041-0.033-0.062a13.944,13.944,0,1,1,26.39-6.327,13.691,13.691,0,0,1-1.528,6.327l-0.034.062-9.548,15.927A3.326,3.326,0,0,1,556.65,648.21Zm2.683-34.012a11.783,11.783,0,0,0-11.586,11.625,11.521,11.521,0,0,0,1.269,5.366l9.529,15.9a1.114,1.114,0,0,0,1.91,0l9.528-15.9a11.665,11.665,0,0,0-2.231-13.625,11.7,11.7,0,0,0-8.247-3.368Zm-4.884,11.7a5.051,5.051,0,1,1,5.051,5.027A5.044,5.044,0,0,1,554.449,625.894Zm2.206,0a2.845,2.845,0,1,0,2.845-2.83A2.842,2.842,0,0,0,556.655,625.894Z"
+                transform="translate(-544 -612)" />
+            </svg>
 
-              </div>
-              <h5 class="contact__info-title">Address</h5>
-              <p class="contact__info-adress">
-                2416 Mapleview Drive<br>
-                Tampa, FL 33634
-              </p>
-            </div>
-            <div class="contact__info-item">
-              <div class="contact__info-imgbox">
-                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="33.968" viewBox="0 0 37 33.968">
-                  <path d="M942.975,650.918a0.957,0.957,0,0,1-.669-0.272,0.922,0.922,0,0,1-.278-0.659L942,629.786c0-.006,0-0.011,0-0.017a0.927,0.927,0,0,1,.408-0.754l5.322-3.616v-3.838a0.94,0.94,0,0,1,.948-0.932h6.067l5.217-3.546a0.961,0.961,0,0,1,1.079,0l5.185,3.545h6.093a0.94,0.94,0,0,1,.947.932v3.882l5.3,3.621a0.933,0.933,0,0,1,.373.519,0.528,0.528,0,0,1,.034.184L979,649.937a0.941,0.941,0,0,1-.946.933l-35.077.048h0Zm2.773-1.867,29.478-.041-14.712-11.224Zm-1.828-.965,11.443-8.73L943.9,631.563Zm21.72-8.748,11.461,8.744-0.023-16.565Zm-16.014-6.148,7.308,4.968,3-2.288a0.959,0.959,0,0,1,1.148-.008l0.013,0.008,2.977,2.272,7.3-4.993V622.493H949.626v10.7Zm-5.013-3.408,3.118,2.121v-4.241Zm28.654,2.072,3.028-2.071-3.028-2.07v4.141Zm-15.188-11.225h4.828l-2.407-1.645Zm-3.994,12.3a0.933,0.933,0,1,1,0-1.865h12.83a0.933,0.933,0,1,1,0,1.865h-12.83Zm0-4.847a0.932,0.932,0,1,1,0-1.864h12.83a0.932,0.932,0,1,1,0,1.864h-12.83Z"
-                    transform="translate(-942 -616.938)" />
-                </svg>
-              </div>
-              <h5 class="contact__info-title">Our Email</h5>
-              <div>Main Email : contact@website.com</div>
-              <div>Inquiries : Info@mail.com</div>
-            </div>
-            <div class="contact__info-item">
-              <div class="contact__info-imgbox">
-                <svg xmlns="http://www.w3.org/2000/svg" width="37" height="44" viewBox="0 0 37 44">
-                  <path d="M1355.44,650.922a5.06,5.06,0,1,1,5.06,5A5.034,5.034,0,0,1,1355.44,650.922Zm1.97,0a3.085,3.085,0,1,0,3.09-3.045A3.074,3.074,0,0,0,1357.41,650.922Zm11.47-11.336a5.06,5.06,0,1,1,5.06,5A5.033,5.033,0,0,1,1368.88,639.586Zm1.98,0a3.085,3.085,0,1,0,3.08-3.046A3.066,3.066,0,0,0,1370.86,639.586Zm-15.42,0a5.06,5.06,0,1,1,5.06,5A5.033,5.033,0,0,1,1355.44,639.586Zm1.97,0a3.085,3.085,0,1,0,3.09-3.046A3.075,3.075,0,0,0,1357.41,639.586Zm-15.41,0a5.06,5.06,0,1,1,5.06,5A5.033,5.033,0,0,1,1342,639.586Zm1.97,0a3.085,3.085,0,1,0,3.09-3.046A3.075,3.075,0,0,0,1343.97,639.586Zm24.91-11.337a5.06,5.06,0,1,1,5.06,5A5.034,5.034,0,0,1,1368.88,628.249Zm1.98,0a3.085,3.085,0,1,0,3.08-3.045A3.064,3.064,0,0,0,1370.86,628.249Zm-15.42,0a5.06,5.06,0,1,1,5.06,5A5.034,5.034,0,0,1,1355.44,628.249Zm1.97,0a3.085,3.085,0,1,0,3.09-3.045A3.073,3.073,0,0,0,1357.41,628.249Zm-15.41,0a5.06,5.06,0,1,1,5.06,5A5.034,5.034,0,0,1,1342,628.249Zm1.97,0a3.085,3.085,0,1,0,3.09-3.045A3.073,3.073,0,0,0,1343.97,628.249Zm24.91-11.336a5.06,5.06,0,1,1,5.06,5A5.033,5.033,0,0,1,1368.88,616.913Zm1.98,0a3.085,3.085,0,1,0,3.08-3.046A3.066,3.066,0,0,0,1370.86,616.913Zm-15.42,0a5.06,5.06,0,1,1,5.06,5A5.033,5.033,0,0,1,1355.44,616.913Zm1.97,0a3.085,3.085,0,1,0,3.09-3.046A3.075,3.075,0,0,0,1357.41,616.913Zm-15.41,0a5.06,5.06,0,1,1,5.06,5A5.033,5.033,0,0,1,1342,616.913Zm1.97,0a3.085,3.085,0,1,0,3.09-3.046A3.075,3.075,0,0,0,1343.97,616.913Z"
-                    transform="translate(-1342 -611.906)" />
-                </svg>
-              </div>
-              <h5 class="contact__info-title">Our Phone</h5>
-              <div>
-                Office Telephone:
-                <a class="contact_info-phone" href="tel:0029129102320">
-                  0029129102320
-                </a>
-              </div>
-              <div>
-                Mobile:
-                <a class="contact_info-phone" href="tel:000232439493">
-                  000 2324 39493
-                </a>
-              </div>
-            </div>
           </div>
-          <div class="contact__form-box">
-            <form class="contact__form">
-              <div class="contact__form-inner">
-                <input class="contact__form-input contact__form-input--name" type="text" placeholder="NAME">
-                <input class="contact__form-input contact__form-input--email" type="text" placeholder="EMAIL">
-              </div>
-              <div class="contact__form-textarea-box">
-                <textarea class="contact__form-textarea" type="text" placeholder="MESSAGE"></textarea>
-              </div>
-              <button class="contact__form-btn">SEND MESSAGE</button>
-            </form>
-            <div id="map"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="articles">
-      <div class="container-small">
-        <div class="articles__top">
-          <h3 class="title">
-            Our Insights & Articles
-          </h3>
-          <a class="articles__top-link" href="#">View All</a>
-        </div>
-      </div>
-      <div class="articles__bottom">
-        <div class="container-small">
-          <div class="articles__items">
-            <div class="articles__item">
-              <div class="articles__item-content">
-                <a href="" class="article__item-link">
-                  <img class="articles__item-img" src="images/articles/1.jpg" alt="articles image">
-                </a>
-                <a class="articles__link-news" href="#">NEWS</a>
-                <div class="articles__info-wrapper">
-                  <a class="articles__info-link" href="#">
-                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                  </a>
-                </div>
-                <div class="articles__details">
-                  <div class="articles__info-date">
-                    28 JANUARY, 2020
-                  </div>
-                  <a class="articles__info-author" href="#">
-                    BY ADMIN
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="articles__item">
-              <div class="articles__item-content">
-                <a href="" class="article__item-link">
-                  <img class="articles__item-img" src="images/articles/2.jpg" alt="articles image">
-                </a>
-                <a class="articles__link-news" href="#">NEWS</a>
-                <div class="articles__info-wrapper">
-                  <a class="articles__info-link" href="#">
-                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                  </a>
-                </div>
-                <div class="articles__details">
-                  <div class="articles__info-date">
-                    28 JANUARY, 2020
-                  </div>
-                  <a class="articles__info-author" href="#">
-                    BY ADMIN
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="articles__item">
-              <div class="articles__item-content">
-                <a href="" class="article__item-link">
-                  <img class="articles__item-img" src="images/articles/3.jpg" alt="articles image">
-                </a>
-                <a class="articles__link-news" href="#">NEWS</a>
-                <div class="articles__info-wrapper">
-                  <a class="articles__info-link" href="#">
-                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-                  </a>
-                </div>
-                <div class="articles__details">
-                  <div class="articles__info-date">
-                    28 JANUARY, 2020
-                  </div>
-                  <a class="articles__info-author" href="#">
-                    BY ADMIN
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="partners">
-      <div class="container-small">
-        <ul class="partners__items">
-          <li class="partners__item">
-            <img src="images/partners/peterson.png" alt="partner logo">
-          </li>
-          <li class="partners__item">
-            <img src="images/partners/kmk.png" alt="partner logo">
-          </li>
-          <li class="partners__item">
-            <img src="images/partners/chainforce.png" alt="partner logo">
-          </li>
-          <li class="partners__item">
-            <img src="images/partners/nextg3n.png" alt="partner logo">
-          </li>
-          <li class="partners__item">
-            <img src="images/partners/vintage.png" alt="partner logo">
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container-small">
-      <div class="footer-top">
-        <div class="footer-top__items">
-          <a class="logo footer-top__logo" href="#">
-            <img src="images/logo.png" alt="logo">
-          </a>
-          <a class="footer-top__item footer-top__address" href="#">
-            ADDRESS: 4772 Wines Lane
-            Houston, TX 77032
-          </a>
-          <a class="footer-top__item footer-top__phone" href="tel:+832-347-5843">
-            TELEPHONE: +832-347-5843
-          </a>
-          <a class="footer-top__item footer-top__email" href="mailto:contact@Glee.com">
-            EMAIL: contact@Glee.com
-          </a>
-        </div>
-        <div class="footer-top__items">
-          <h6 class="footer-top__title">
-            Services
-          </h6>
-          <ul class="footer-top__list">
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
-                About us
-              </a>
-            </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
-                Return Policy
-              </a>
-            </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
-                Our Blog
-              </a>
-            </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
-                Contact Us
-              </a>
-            </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
-                Terms & Condition
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-top__items">
-          <h6 class="footer-top__title">
-            Account
-          </h6>
-          <ul class="footer-top__list">
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
-                Your Account
-              </a>
-            </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
-                Checkout
-              </a>
-            </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
-                Login
-              </a>
-            </li>
-            <li class="footer-top__item">
-              <a class="footer-top__link" href="#">
-                Register
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-top__items">
-          <h6 class="footer-top__title">
-            newsletter
-          </h6>
-          <p class="footer-top__text">
-            Subscribe by our newsletter and get
-            update protidin.
+          <h5 class="contact__info-title">Address</h5>
+          <p class="contact__info-adress">
+            2416 Mapleview Drive<br>
+            Tampa, FL 33634
           </p>
-          <form class="footer-top__form" action="#">
-            <input class="footer-top__form-input" type="email" placeholder="Email address" required>
-            <button class="footer-top__form-btn" type="submit">Subscribe</button>
-          </form>
+        </div>
+        <div class="contact__info-item">
+          <div class="contact__info-imgbox">
+            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="33.968" viewBox="0 0 37 33.968">
+              <path
+                d="M942.975,650.918a0.957,0.957,0,0,1-.669-0.272,0.922,0.922,0,0,1-.278-0.659L942,629.786c0-.006,0-0.011,0-0.017a0.927,0.927,0,0,1,.408-0.754l5.322-3.616v-3.838a0.94,0.94,0,0,1,.948-0.932h6.067l5.217-3.546a0.961,0.961,0,0,1,1.079,0l5.185,3.545h6.093a0.94,0.94,0,0,1,.947.932v3.882l5.3,3.621a0.933,0.933,0,0,1,.373.519,0.528,0.528,0,0,1,.034.184L979,649.937a0.941,0.941,0,0,1-.946.933l-35.077.048h0Zm2.773-1.867,29.478-.041-14.712-11.224Zm-1.828-.965,11.443-8.73L943.9,631.563Zm21.72-8.748,11.461,8.744-0.023-16.565Zm-16.014-6.148,7.308,4.968,3-2.288a0.959,0.959,0,0,1,1.148-.008l0.013,0.008,2.977,2.272,7.3-4.993V622.493H949.626v10.7Zm-5.013-3.408,3.118,2.121v-4.241Zm28.654,2.072,3.028-2.071-3.028-2.07v4.141Zm-15.188-11.225h4.828l-2.407-1.645Zm-3.994,12.3a0.933,0.933,0,1,1,0-1.865h12.83a0.933,0.933,0,1,1,0,1.865h-12.83Zm0-4.847a0.932,0.932,0,1,1,0-1.864h12.83a0.932,0.932,0,1,1,0,1.864h-12.83Z"
+                transform="translate(-942 -616.938)" />
+            </svg>
+          </div>
+          <h5 class="contact__info-title">Our Email</h5>
+          <div>Main Email : contact@website.com</div>
+          <div>Inquiries : Info@mail.com</div>
+        </div>
+        <div class="contact__info-item">
+          <div class="contact__info-imgbox">
+            <svg xmlns="http://www.w3.org/2000/svg" width="37" height="44" viewBox="0 0 37 44">
+              <path
+                d="M1355.44,650.922a5.06,5.06,0,1,1,5.06,5A5.034,5.034,0,0,1,1355.44,650.922Zm1.97,0a3.085,3.085,0,1,0,3.09-3.045A3.074,3.074,0,0,0,1357.41,650.922Zm11.47-11.336a5.06,5.06,0,1,1,5.06,5A5.033,5.033,0,0,1,1368.88,639.586Zm1.98,0a3.085,3.085,0,1,0,3.08-3.046A3.066,3.066,0,0,0,1370.86,639.586Zm-15.42,0a5.06,5.06,0,1,1,5.06,5A5.033,5.033,0,0,1,1355.44,639.586Zm1.97,0a3.085,3.085,0,1,0,3.09-3.046A3.075,3.075,0,0,0,1357.41,639.586Zm-15.41,0a5.06,5.06,0,1,1,5.06,5A5.033,5.033,0,0,1,1342,639.586Zm1.97,0a3.085,3.085,0,1,0,3.09-3.046A3.075,3.075,0,0,0,1343.97,639.586Zm24.91-11.337a5.06,5.06,0,1,1,5.06,5A5.034,5.034,0,0,1,1368.88,628.249Zm1.98,0a3.085,3.085,0,1,0,3.08-3.045A3.064,3.064,0,0,0,1370.86,628.249Zm-15.42,0a5.06,5.06,0,1,1,5.06,5A5.034,5.034,0,0,1,1355.44,628.249Zm1.97,0a3.085,3.085,0,1,0,3.09-3.045A3.073,3.073,0,0,0,1357.41,628.249Zm-15.41,0a5.06,5.06,0,1,1,5.06,5A5.034,5.034,0,0,1,1342,628.249Zm1.97,0a3.085,3.085,0,1,0,3.09-3.045A3.073,3.073,0,0,0,1343.97,628.249Zm24.91-11.336a5.06,5.06,0,1,1,5.06,5A5.033,5.033,0,0,1,1368.88,616.913Zm1.98,0a3.085,3.085,0,1,0,3.08-3.046A3.066,3.066,0,0,0,1370.86,616.913Zm-15.42,0a5.06,5.06,0,1,1,5.06,5A5.033,5.033,0,0,1,1355.44,616.913Zm1.97,0a3.085,3.085,0,1,0,3.09-3.046A3.075,3.075,0,0,0,1357.41,616.913Zm-15.41,0a5.06,5.06,0,1,1,5.06,5A5.033,5.033,0,0,1,1342,616.913Zm1.97,0a3.085,3.085,0,1,0,3.09-3.046A3.075,3.075,0,0,0,1343.97,616.913Z"
+                transform="translate(-1342 -611.906)" />
+            </svg>
+          </div>
+          <h5 class="contact__info-title">Our Phone</h5>
+          <div>
+            Office Telephone:
+            <a class="contact_info-phone" href="tel:0029129102320">
+              0029129102320
+            </a>
+          </div>
+          <div>
+            Mobile:
+            <a class="contact_info-phone" href="tel:000232439493">
+              000 2324 39493
+            </a>
+          </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="footer-bottom__copy">
-          ©2020 CopyRight Example. All rights reserved.
-        </div>
-        <ul class="footer-bottom__nav-menu">
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">
-              Home
-            </a>
-          </li>
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">
-              About
-            </a>
-          </li>
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">
-              Blog
-            </a>
-          </li>
-          <li class="footer-bottom__nav-item">
-            <a class="footer-bottom__nav-link" href="#">
-              Contact
-            </a>
-          </li>
-        </ul>
+      <div class="contact__form-box">
+        <form class="contact__form">
+          <div class="contact__form-inner">
+            <input class="contact__form-input contact__form-input--name" type="text" placeholder="NAME">
+            <input class="contact__form-input contact__form-input--email" type="text" placeholder="EMAIL">
+          </div>
+          <div class="contact__form-textarea-box">
+            <textarea class="contact__form-textarea" type="text" placeholder="MESSAGE"></textarea>
+          </div>
+          <button class="contact__form-btn">SEND MESSAGE</button>
+        </form>
+        <div id="map"></div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
+    <section class="articles">
+  <div class="container-small">
+    <div class="articles__top">
+      <h3 class="title">
+        Our Insights & Articles
+      </h3>
+      <a class="articles__top-link" href="#">View All</a>
+    </div>
+  </div>
+  <div class="articles__bottom">
+    <div class="container-small">
+      <div class="articles__items">
+        <div class="articles__item">
+          <div class="articles__item-content">
+            <a class="article__item-link" href="#">
+              <img class="articles__item-img" src="images/articles/1.jpg" alt="articles image">
+            </a>
+            <a class="articles__link-news" href="#">NEWS</a>
+            <div class="articles__info-wrapper">
+              <a class="articles__info-link" href="#">
+                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              </a>
+            </div>
+            <div class="articles__details">
+              <div class="articles__info-date">
+                <span class="articles__info-dateicon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11pt" height="12pt" viewBox="0 0 11 12" version="1.1">
+                    <g>
+                      <path style=" fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;"
+                        d="M 3.632812 6.75 L 2.652344 6.75 C 2.488281 6.75 2.355469 6.625 2.355469 6.46875 L 2.355469 5.53125 C 2.355469 5.375 2.488281 5.25 2.652344 5.25 L 3.632812 5.25 C 3.796875 5.25 3.929688 5.375 3.929688 5.53125 L 3.929688 6.46875 C 3.929688 6.625 3.796875 6.75 3.632812 6.75 Z M 6.285156 6.46875 L 6.285156 5.53125 C 6.285156 5.375 6.152344 5.25 5.992188 5.25 L 5.007812 5.25 C 4.847656 5.25 4.714844 5.375 4.714844 5.53125 L 4.714844 6.46875 C 4.714844 6.625 4.847656 6.75 5.007812 6.75 L 5.992188 6.75 C 6.152344 6.75 6.285156 6.625 6.285156 6.46875 Z M 8.644531 6.46875 L 8.644531 5.53125 C 8.644531 5.375 8.511719 5.25 8.347656 5.25 L 7.367188 5.25 C 7.203125 5.25 7.070312 5.375 7.070312 5.53125 L 7.070312 6.46875 C 7.070312 6.625 7.203125 6.75 7.367188 6.75 L 8.347656 6.75 C 8.511719 6.75 8.644531 6.625 8.644531 6.46875 Z M 6.285156 8.71875 L 6.285156 7.78125 C 6.285156 7.625 6.152344 7.5 5.992188 7.5 L 5.007812 7.5 C 4.847656 7.5 4.714844 7.625 4.714844 7.78125 L 4.714844 8.71875 C 4.714844 8.875 4.847656 9 5.007812 9 L 5.992188 9 C 6.152344 9 6.285156 8.875 6.285156 8.71875 Z M 3.929688 8.71875 L 3.929688 7.78125 C 3.929688 7.625 3.796875 7.5 3.632812 7.5 L 2.652344 7.5 C 2.488281 7.5 2.355469 7.625 2.355469 7.78125 L 2.355469 8.71875 C 2.355469 8.875 2.488281 9 2.652344 9 L 3.632812 9 C 3.796875 9 3.929688 8.875 3.929688 8.71875 Z M 8.644531 8.71875 L 8.644531 7.78125 C 8.644531 7.625 8.511719 7.5 8.347656 7.5 L 7.367188 7.5 C 7.203125 7.5 7.070312 7.625 7.070312 7.78125 L 7.070312 8.71875 C 7.070312 8.875 7.203125 9 7.367188 9 L 8.347656 9 C 8.511719 9 8.644531 8.875 8.644531 8.71875 Z M 11 2.625 L 11 10.875 C 11 11.496094 10.472656 12 9.820312 12 L 1.179688 12 C 0.527344 12 0 11.496094 0 10.875 L 0 2.625 C 0 2.003906 0.527344 1.5 1.179688 1.5 L 2.355469 1.5 L 2.355469 0.28125 C 2.355469 0.125 2.488281 0 2.652344 0 L 3.632812 0 C 3.796875 0 3.929688 0.125 3.929688 0.28125 L 3.929688 1.5 L 7.070312 1.5 L 7.070312 0.28125 C 7.070312 0.125 7.203125 0 7.367188 0 L 8.347656 0 C 8.511719 0 8.644531 0.125 8.644531 0.28125 L 8.644531 1.5 L 9.820312 1.5 C 10.472656 1.5 11 2.003906 11 2.625 Z M 9.820312 10.734375 L 9.820312 3.75 L 1.179688 3.75 L 1.179688 10.734375 C 1.179688 10.8125 1.246094 10.875 1.324219 10.875 L 9.675781 10.875 C 9.753906 10.875 9.820312 10.8125 9.820312 10.734375 Z M 9.820312 10.734375 " />
+                    </g>
+                  </svg>
+                </span>
+                28 JANUARY, 2020
+              </div>
+              <a class="articles__info-author" href="#">
+                <span class="articles__info-dateicon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11pt" height="12pt" viewBox="0 0 11 12" version="1.1">
+                    <g id="surface1">
+                      <path
+                        d="M 7.699219 7.125 C 6.996094 7.125 6.65625 7.5 5.5 7.5 C 4.34375 7.5 4.007812 7.125 3.300781 7.125 C 1.476562 7.125 0 8.535156 0 10.273438 L 0 10.875 C 0 11.496094 0.527344 12 1.179688 12 L 9.820312 12 C 10.472656 12 11 11.496094 11 10.875 L 11 10.273438 C 11 8.535156 9.523438 7.125 7.699219 7.125 Z M 9.820312 10.875 L 1.179688 10.875 L 1.179688 10.273438 C 1.179688 9.160156 2.132812 8.25 3.300781 8.25 C 3.660156 8.25 4.242188 8.625 5.5 8.625 C 6.769531 8.625 7.339844 8.25 7.699219 8.25 C 8.867188 8.25 9.820312 9.160156 9.820312 10.273438 Z M 5.5 6.75 C 7.453125 6.75 9.035156 5.238281 9.035156 3.375 C 9.035156 1.511719 7.453125 0 5.5 0 C 3.546875 0 1.964844 1.511719 1.964844 3.375 C 1.964844 5.238281 3.546875 6.75 5.5 6.75 Z M 5.5 1.125 C 6.800781 1.125 7.855469 2.136719 7.855469 3.375 C 7.855469 4.613281 6.800781 5.625 5.5 5.625 C 4.199219 5.625 3.144531 4.613281 3.144531 3.375 C 3.144531 2.136719 4.199219 1.125 5.5 1.125 Z M 5.5 1.125 " />
+                    </g>
+                  </svg>
+                </span>
+                BY ADMIN
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="articles__item">
+          <div class="articles__item-content">
+            <a class="article__item-link" href="#">
+              <img class="articles__item-img" src="images/articles/2.jpg" alt="articles image">
+            </a>
+            <a class="articles__link-news" href="#">NEWS</a>
+            <div class="articles__info-wrapper">
+              <a class="articles__info-link" href="#">
+                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              </a>
+            </div>
+            <div class="articles__details">
+              <div class="articles__info-date">
+                <span class="articles__info-dateicon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11pt" height="12pt" viewBox="0 0 11 12" version="1.1">
+                    <g>
+                      <path style=" fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;"
+                        d="M 3.632812 6.75 L 2.652344 6.75 C 2.488281 6.75 2.355469 6.625 2.355469 6.46875 L 2.355469 5.53125 C 2.355469 5.375 2.488281 5.25 2.652344 5.25 L 3.632812 5.25 C 3.796875 5.25 3.929688 5.375 3.929688 5.53125 L 3.929688 6.46875 C 3.929688 6.625 3.796875 6.75 3.632812 6.75 Z M 6.285156 6.46875 L 6.285156 5.53125 C 6.285156 5.375 6.152344 5.25 5.992188 5.25 L 5.007812 5.25 C 4.847656 5.25 4.714844 5.375 4.714844 5.53125 L 4.714844 6.46875 C 4.714844 6.625 4.847656 6.75 5.007812 6.75 L 5.992188 6.75 C 6.152344 6.75 6.285156 6.625 6.285156 6.46875 Z M 8.644531 6.46875 L 8.644531 5.53125 C 8.644531 5.375 8.511719 5.25 8.347656 5.25 L 7.367188 5.25 C 7.203125 5.25 7.070312 5.375 7.070312 5.53125 L 7.070312 6.46875 C 7.070312 6.625 7.203125 6.75 7.367188 6.75 L 8.347656 6.75 C 8.511719 6.75 8.644531 6.625 8.644531 6.46875 Z M 6.285156 8.71875 L 6.285156 7.78125 C 6.285156 7.625 6.152344 7.5 5.992188 7.5 L 5.007812 7.5 C 4.847656 7.5 4.714844 7.625 4.714844 7.78125 L 4.714844 8.71875 C 4.714844 8.875 4.847656 9 5.007812 9 L 5.992188 9 C 6.152344 9 6.285156 8.875 6.285156 8.71875 Z M 3.929688 8.71875 L 3.929688 7.78125 C 3.929688 7.625 3.796875 7.5 3.632812 7.5 L 2.652344 7.5 C 2.488281 7.5 2.355469 7.625 2.355469 7.78125 L 2.355469 8.71875 C 2.355469 8.875 2.488281 9 2.652344 9 L 3.632812 9 C 3.796875 9 3.929688 8.875 3.929688 8.71875 Z M 8.644531 8.71875 L 8.644531 7.78125 C 8.644531 7.625 8.511719 7.5 8.347656 7.5 L 7.367188 7.5 C 7.203125 7.5 7.070312 7.625 7.070312 7.78125 L 7.070312 8.71875 C 7.070312 8.875 7.203125 9 7.367188 9 L 8.347656 9 C 8.511719 9 8.644531 8.875 8.644531 8.71875 Z M 11 2.625 L 11 10.875 C 11 11.496094 10.472656 12 9.820312 12 L 1.179688 12 C 0.527344 12 0 11.496094 0 10.875 L 0 2.625 C 0 2.003906 0.527344 1.5 1.179688 1.5 L 2.355469 1.5 L 2.355469 0.28125 C 2.355469 0.125 2.488281 0 2.652344 0 L 3.632812 0 C 3.796875 0 3.929688 0.125 3.929688 0.28125 L 3.929688 1.5 L 7.070312 1.5 L 7.070312 0.28125 C 7.070312 0.125 7.203125 0 7.367188 0 L 8.347656 0 C 8.511719 0 8.644531 0.125 8.644531 0.28125 L 8.644531 1.5 L 9.820312 1.5 C 10.472656 1.5 11 2.003906 11 2.625 Z M 9.820312 10.734375 L 9.820312 3.75 L 1.179688 3.75 L 1.179688 10.734375 C 1.179688 10.8125 1.246094 10.875 1.324219 10.875 L 9.675781 10.875 C 9.753906 10.875 9.820312 10.8125 9.820312 10.734375 Z M 9.820312 10.734375 " />
+                    </g>
+                  </svg>
+                </span>
+                28 JANUARY, 2020
+              </div>
+              <a class="articles__info-author" href="#">
+                <span class="articles__info-dateicon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11pt" height="12pt" viewBox="0 0 11 12" version="1.1">
+                    <g id="surface1">
+                      <path
+                        d="M 7.699219 7.125 C 6.996094 7.125 6.65625 7.5 5.5 7.5 C 4.34375 7.5 4.007812 7.125 3.300781 7.125 C 1.476562 7.125 0 8.535156 0 10.273438 L 0 10.875 C 0 11.496094 0.527344 12 1.179688 12 L 9.820312 12 C 10.472656 12 11 11.496094 11 10.875 L 11 10.273438 C 11 8.535156 9.523438 7.125 7.699219 7.125 Z M 9.820312 10.875 L 1.179688 10.875 L 1.179688 10.273438 C 1.179688 9.160156 2.132812 8.25 3.300781 8.25 C 3.660156 8.25 4.242188 8.625 5.5 8.625 C 6.769531 8.625 7.339844 8.25 7.699219 8.25 C 8.867188 8.25 9.820312 9.160156 9.820312 10.273438 Z M 5.5 6.75 C 7.453125 6.75 9.035156 5.238281 9.035156 3.375 C 9.035156 1.511719 7.453125 0 5.5 0 C 3.546875 0 1.964844 1.511719 1.964844 3.375 C 1.964844 5.238281 3.546875 6.75 5.5 6.75 Z M 5.5 1.125 C 6.800781 1.125 7.855469 2.136719 7.855469 3.375 C 7.855469 4.613281 6.800781 5.625 5.5 5.625 C 4.199219 5.625 3.144531 4.613281 3.144531 3.375 C 3.144531 2.136719 4.199219 1.125 5.5 1.125 Z M 5.5 1.125 " />
+                    </g>
+                  </svg>
+                </span>
+                BY ADMIN
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="articles__item">
+          <div class="articles__item-content">
+            <a class="article__item-link" href="#">
+              <img class="articles__item-img" src="images/articles/3.jpg" alt="articles image">
+            </a>
+            <a class="articles__link-news" href="#">NEWS</a>
+            <div class="articles__info-wrapper">
+              <a class="articles__info-link" href="#">
+                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+              </a>
+            </div>
+            <div class="articles__details">
+              <div class="articles__info-date">
+                <span class="articles__info-dateicon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11pt" height="12pt" viewBox="0 0 11 12" version="1.1">
+                    <g>
+                      <path style=" fill-rule:nonzero;fill:rgb(0%,0%,0%);fill-opacity:1;"
+                        d="M 3.632812 6.75 L 2.652344 6.75 C 2.488281 6.75 2.355469 6.625 2.355469 6.46875 L 2.355469 5.53125 C 2.355469 5.375 2.488281 5.25 2.652344 5.25 L 3.632812 5.25 C 3.796875 5.25 3.929688 5.375 3.929688 5.53125 L 3.929688 6.46875 C 3.929688 6.625 3.796875 6.75 3.632812 6.75 Z M 6.285156 6.46875 L 6.285156 5.53125 C 6.285156 5.375 6.152344 5.25 5.992188 5.25 L 5.007812 5.25 C 4.847656 5.25 4.714844 5.375 4.714844 5.53125 L 4.714844 6.46875 C 4.714844 6.625 4.847656 6.75 5.007812 6.75 L 5.992188 6.75 C 6.152344 6.75 6.285156 6.625 6.285156 6.46875 Z M 8.644531 6.46875 L 8.644531 5.53125 C 8.644531 5.375 8.511719 5.25 8.347656 5.25 L 7.367188 5.25 C 7.203125 5.25 7.070312 5.375 7.070312 5.53125 L 7.070312 6.46875 C 7.070312 6.625 7.203125 6.75 7.367188 6.75 L 8.347656 6.75 C 8.511719 6.75 8.644531 6.625 8.644531 6.46875 Z M 6.285156 8.71875 L 6.285156 7.78125 C 6.285156 7.625 6.152344 7.5 5.992188 7.5 L 5.007812 7.5 C 4.847656 7.5 4.714844 7.625 4.714844 7.78125 L 4.714844 8.71875 C 4.714844 8.875 4.847656 9 5.007812 9 L 5.992188 9 C 6.152344 9 6.285156 8.875 6.285156 8.71875 Z M 3.929688 8.71875 L 3.929688 7.78125 C 3.929688 7.625 3.796875 7.5 3.632812 7.5 L 2.652344 7.5 C 2.488281 7.5 2.355469 7.625 2.355469 7.78125 L 2.355469 8.71875 C 2.355469 8.875 2.488281 9 2.652344 9 L 3.632812 9 C 3.796875 9 3.929688 8.875 3.929688 8.71875 Z M 8.644531 8.71875 L 8.644531 7.78125 C 8.644531 7.625 8.511719 7.5 8.347656 7.5 L 7.367188 7.5 C 7.203125 7.5 7.070312 7.625 7.070312 7.78125 L 7.070312 8.71875 C 7.070312 8.875 7.203125 9 7.367188 9 L 8.347656 9 C 8.511719 9 8.644531 8.875 8.644531 8.71875 Z M 11 2.625 L 11 10.875 C 11 11.496094 10.472656 12 9.820312 12 L 1.179688 12 C 0.527344 12 0 11.496094 0 10.875 L 0 2.625 C 0 2.003906 0.527344 1.5 1.179688 1.5 L 2.355469 1.5 L 2.355469 0.28125 C 2.355469 0.125 2.488281 0 2.652344 0 L 3.632812 0 C 3.796875 0 3.929688 0.125 3.929688 0.28125 L 3.929688 1.5 L 7.070312 1.5 L 7.070312 0.28125 C 7.070312 0.125 7.203125 0 7.367188 0 L 8.347656 0 C 8.511719 0 8.644531 0.125 8.644531 0.28125 L 8.644531 1.5 L 9.820312 1.5 C 10.472656 1.5 11 2.003906 11 2.625 Z M 9.820312 10.734375 L 9.820312 3.75 L 1.179688 3.75 L 1.179688 10.734375 C 1.179688 10.8125 1.246094 10.875 1.324219 10.875 L 9.675781 10.875 C 9.753906 10.875 9.820312 10.8125 9.820312 10.734375 Z M 9.820312 10.734375 " />
+                    </g>
+                  </svg>
+                </span>
+                28 JANUARY, 2020
+              </div>
+              <a class="articles__info-author" href="#">
+                <span class="articles__info-dateicon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="11pt" height="12pt" viewBox="0 0 11 12" version="1.1">
+                    <g id="surface1">
+                      <path
+                        d="M 7.699219 7.125 C 6.996094 7.125 6.65625 7.5 5.5 7.5 C 4.34375 7.5 4.007812 7.125 3.300781 7.125 C 1.476562 7.125 0 8.535156 0 10.273438 L 0 10.875 C 0 11.496094 0.527344 12 1.179688 12 L 9.820312 12 C 10.472656 12 11 11.496094 11 10.875 L 11 10.273438 C 11 8.535156 9.523438 7.125 7.699219 7.125 Z M 9.820312 10.875 L 1.179688 10.875 L 1.179688 10.273438 C 1.179688 9.160156 2.132812 8.25 3.300781 8.25 C 3.660156 8.25 4.242188 8.625 5.5 8.625 C 6.769531 8.625 7.339844 8.25 7.699219 8.25 C 8.867188 8.25 9.820312 9.160156 9.820312 10.273438 Z M 5.5 6.75 C 7.453125 6.75 9.035156 5.238281 9.035156 3.375 C 9.035156 1.511719 7.453125 0 5.5 0 C 3.546875 0 1.964844 1.511719 1.964844 3.375 C 1.964844 5.238281 3.546875 6.75 5.5 6.75 Z M 5.5 1.125 C 6.800781 1.125 7.855469 2.136719 7.855469 3.375 C 7.855469 4.613281 6.800781 5.625 5.5 5.625 C 4.199219 5.625 3.144531 4.613281 3.144531 3.375 C 3.144531 2.136719 4.199219 1.125 5.5 1.125 Z M 5.5 1.125 " />
+                    </g>
+                  </svg>
+                </span>
+                BY ADMIN
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="partners">
+  <div class="container-small">
+    <ul class="partners__items">
+      <li class="partners__item">
+        <img src="images/partners/peterson.png" alt="partner logo">
+      </li>
+      <li class="partners__item">
+        <img src="images/partners/kmk.png" alt="partner logo">
+      </li>
+      <li class="partners__item">
+        <img src="images/partners/chainforce.png" alt="partner logo">
+      </li>
+      <li class="partners__item">
+        <img src="images/partners/nextg3n.png" alt="partner logo">
+      </li>
+      <li class="partners__item">
+        <img src="images/partners/vintage.png" alt="partner logo">
+      </li>
+    </ul>
+  </div>
+</section>
+
+  </main>
+  
+  <footer class="footer">
+  <div class="container-small">
+    <div class="footer-top">
+      <div class="footer-top__items">
+        <a class="logo footer-top__logo" href="#">
+          <img src="images/logo.png" alt="logo">
+        </a>
+        <a class="footer-top__item footer-top__address" href="#">
+          ADDRESS: 4772 Wines Lane
+          Houston, TX 77032
+        </a>
+        <a class="footer-top__item footer-top__phone" href="tel:+832-347-5843">
+          TELEPHONE: +832-347-5843
+        </a>
+        <a class="footer-top__item footer-top__email" href="mailto:contact@Glee.com">
+          EMAIL: contact@Glee.com
+        </a>
+      </div>
+      <div class="footer-top__items">
+        <h6 class="footer-top__title">
+          Services
+        </h6>
+        <ul class="footer-top__list">
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">
+              About us
+            </a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">
+              Return Policy
+            </a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">
+              Our Blog
+            </a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">
+              Contact Us
+            </a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">
+              Terms & Condition
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-top__items">
+        <h6 class="footer-top__title">
+          Account
+        </h6>
+        <ul class="footer-top__list">
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">
+              Your Account
+            </a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">
+              Checkout
+            </a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">
+              Login
+            </a>
+          </li>
+          <li class="footer-top__item">
+            <a class="footer-top__link" href="#">
+              Register
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-top__items">
+        <h6 class="footer-top__title">
+          newsletter
+        </h6>
+        <p class="footer-top__text">
+          Subscribe by our newsletter and get
+          update protidin.
+        </p>
+        <form class="footer-top__form" action="#">
+          <input class="footer-top__form-input" type="email" placeholder="Email address" required>
+          <button class="footer-top__form-btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom__copy">
+        ©2020 CopyRight Example. All rights reserved.
+      </div>
+      <ul class="footer-bottom__nav-menu">
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">
+            Home
+          </a>
+        </li>
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">
+            About
+          </a>
+        </li>
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">
+            Blog
+          </a>
+        </li>
+        <li class="footer-bottom__nav-item">
+          <a class="footer-bottom__nav-link" href="#">
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
 
 
   <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=&v=weekly" defer></script>

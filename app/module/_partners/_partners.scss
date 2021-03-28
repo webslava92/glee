@@ -1,0 +1,10 @@
+.partners{
+  background-color: #fef7f0;
+  &__items{
+    height: 266px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: center center;
+  }
+}
