@@ -38,6 +38,7 @@
     line-height: 21px;
     text-transform: uppercase;
     margin: 16px 0 19px;
+    pointer-events: none;
   }
   &__text{
     @extend %Rubik-400;
@@ -94,6 +95,68 @@
     @extend %Rubik-400;
     &:hover{
       color: $accent;
+    }
+  }
+}
+
+@media (max-width: 860px){
+  .footer-top{
+    padding: 30px 0;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    &__items{
+      text-align: center;
+    }
+    &__items + .footer-top__items{
+      margin-left: 0;
+    }
+    &__item{
+      justify-content: center;
+    }
+    &__logo{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+    &__items-contacts{
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__address,
+  &__email,
+  &__phone{
+    width: 100%;
+  }
+  &__items-form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 600px){
+  .footer-top{
+    &__items-contacts{
+      max-width: 270px;
+      flex-direction: column;
+    }
+    &__title{
+      pointer-events: painted;
+    }
+  }
+  .footer-bottom{
+    flex-direction: column;
+    justify-content: center;
+    &__copy{
+      padding: 50px 0;
+    }
+    &__nav-item{
+      margin-bottom: 50px;
     }
   }
 }
