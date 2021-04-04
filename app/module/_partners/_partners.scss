@@ -1,10 +1,33 @@
 .partners{
   background-color: #fef7f0;
+  padding: 91px 0;
   &__items{
-    height: 266px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: center center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1200px) {
+  .partners{
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .partners{
+    &__item{
+      margin: 30px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .partners{
+    &__items{
+      flex-direction: column;
+    }
   }
 }
