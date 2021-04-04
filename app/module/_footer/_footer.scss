@@ -99,6 +99,12 @@
   }
 }
 
+@media (max-width: 1200px) {
+  .footer-top{
+    padding: 50px 0;
+  }
+}
+
 @media (max-width: 860px){
   .footer-top{
     padding: 30px 0;
@@ -148,12 +154,19 @@
     &__title{
       pointer-events: painted;
     }
+    &__address,
+    &__email,
+    &__phone{
+      display: flex;
+      width: 100%;
+    }
   }
   .footer-bottom{
     flex-direction: column;
     justify-content: center;
     &__copy{
-      padding: 50px 0;
+      padding: 80px 0 30px;
+      text-align: center;
     }
     &__nav-item{
       margin-bottom: 50px;

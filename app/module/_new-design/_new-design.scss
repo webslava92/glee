@@ -56,3 +56,37 @@
     @extend %DMSans-700;
   }
 }
+
+@media (max-width: 1200px) {
+  .new-design{
+    &__items{
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__img{
+      margin: 0 0 0 auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .new-design{
+    &__items{
+      grid-template-columns: repeat(1, 1fr);
+      width: 100%;
+    }
+    &__item{
+      width: 100%;
+      right: 0;
+    }
+    &__btn + .new-design__btn{
+      margin-left: 10px;
+    }
+    &__title{
+      min-width: 250px;
+      margin-top: 17px;
+    }
+    &__subtitle {
+      margin-top: 8px;
+    }
+  }
+}
