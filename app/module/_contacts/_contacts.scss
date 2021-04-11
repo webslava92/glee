@@ -121,3 +121,55 @@
     height: 335px;
   }
 }
+
+@media (max-width: 1230px){
+  .contact{
+    &__info-item{
+      width: 30%;
+      height: 100%;
+    }
+    &__info-imgbox{
+      margin: 30px auto 20px;
+    }
+    &__form-box{
+      display: block;
+    }
+    #map{
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+}
+@media (max-width: 900px){
+  .contact{
+    &__info-box{
+      display: block;
+      background-color: none;
+    }
+    &__info-item{
+      width: 100%;
+    }
+    &__info-item + .contact__info-item{
+      margin-top: 20px;
+    }
+    &__form-inner{
+      width: 100%;
+    }
+    &__form-input{
+      width: 100%;
+    }
+    &__form-input--email{
+      margin-left: 10px;
+    }
+  }
+}
+@media (max-width: 600px){
+  .contact{
+    &__form-inner{
+      display: block;
+    }
+    &__form-input--email{
+      margin-left: 0;
+    }
+  }
+}
