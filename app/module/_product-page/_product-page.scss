@@ -183,7 +183,7 @@
   &__top-item{
     display: inline-block;
     padding: 17px 0;
-    min-width: 240px;
+    width: 240px;
     background-color: $search;
     font-size: 18px;
     @extend %Rubik-500;
@@ -212,5 +212,106 @@
     font-size: 16px;
     @extend %Rubik-400;
     color: $direct;
+  }
+}
+
+@media(max-width: 1300px){
+  .product-one{
+    &__slide{
+      width: 100%;
+      margin-right: 30px;
+    }
+    &__content{
+      width: 100%;
+    }
+    &__content-text{
+      width: 100%;
+    }
+    &__content-btn{
+      margin-top: 20px;
+    }
+  }
+  .product-slide{
+    &__thumb-item{
+      width: 100% !important;
+    }
+    &__big{
+      max-width: 100%;
+    }
+    &__big-img{
+      width: 100% !important;
+    }
+  }
+}
+
+@media(max-width: 1024px){
+  .product-one{
+    &__title{
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    &__content-price{
+      margin: 10px 0;
+    }
+    &__content-text{
+      margin-bottom: 10px;
+    }
+    &__content-info{
+      margin-top: 30px;
+    }
+  }
+}
+
+@media(max-width: 900px){
+  .product-one{
+    &__inner{
+      display: block;
+    }
+    &__slide{
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    &__content{
+      justify-content: center;
+    }
+  }
+  .product-slide{
+    &__big{
+      width: 60%;
+      margin: 0 auto;
+    }
+    &__big-img{
+      width: 50%;
+    }
+    &__thumb{
+      margin-right: 15px;
+    }
+  }
+  .product-tabs{
+    &__top-item{
+      font-size: 14px;
+      line-height: 16px;
+      width: 100%;
+    }
+    &__top-item + .product-tabs__top-item{
+      margin-left: 0;
+    }
+  }
+
+}
+
+@media(max-width: 600px){
+  .product-slide{
+    &__thumb-item{
+      width: 65% !important;
+    }
+  }
+}
+
+@media(max-width: 460px){
+  .product-slide{
+    &__thumb{
+      display: none;
+    }
   }
 }
