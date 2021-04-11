@@ -29,7 +29,27 @@ $(function () {
   $('.relayted__items').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
-    variableWidth: true
+    variableWidth: false,
+    responsive: [
+      {
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+        }
+      },
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
   });
 
   $('.product-tabs__top-item').on('click', function (e) {

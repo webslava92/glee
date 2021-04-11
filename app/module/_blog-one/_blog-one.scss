@@ -6,6 +6,7 @@
   }
   h3{
     font-size: 36px;
+    line-height: 38px;
     @extend %Rubik-400;
     color: #333333;
     padding: 40px 0 25px;
@@ -53,6 +54,7 @@
   }
   h6{
     font-size: 18px;
+    line-height: 20px;
     @extend %Rubik-700;
     color: $direct;
     padding: 20px 0;
