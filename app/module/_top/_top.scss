@@ -10,3 +10,11 @@
     color: #222933;
   }
 }
+
+@media (max-width: 375px){
+  .top{
+    &__page-title{
+      font-size: 22px;
+    }
+  }
+}

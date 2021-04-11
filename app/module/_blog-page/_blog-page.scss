@@ -90,3 +90,43 @@
     }
   }
 }
+
+@media (max-width: 1230px) {
+  .blog-page{
+    &__inner{
+      flex-direction: column;
+    }
+    &__content{
+      width: 100%;
+    }
+    &__aside{
+      order: -1;
+      width: 96%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .filter-resentpost,
+    .filter-category{
+      display: none;
+    }
+  }
+  .search-form{
+    width: 100%;
+    input{
+      width: 98%;
+    }
+  }
+}
+
+@media (max-width: 530px){
+  .blog-page{
+    .articles__details{
+      height: 40px;
+      margin-top: -40px;
+      width: 273px;
+    }
+    &__aside{
+      width: 90%;
+    }
+  }
+}

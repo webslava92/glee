@@ -9,6 +9,10 @@ $(function () {
     $(this).toggleClass('active');
   });
 
+  $('.shop__filters-btn').on('click', function () {
+    $('.shop__filters').slideToggle();
+  });
+
   $('.menu__home-link, .menu__pages-link').on('click', function () {
     $('.menu__home').removeClass('menu__home--active');
     $('.menu__pages').removeClass('menu__pages--active');
@@ -62,10 +66,12 @@ $(function () {
 
   $('.button-list').on('click', function () {
     $('.product-item').addClass('product-item--list');
+    $('.shop-content__wrapper').addClass('shop-content__wrapper-nogrid');
   });
 
   $('.button-grid').on('click', function () {
     $('.product-item').removeClass('product-item--list');
+    $('.shop-content__wrapper').removeClass('shop-content__wrapper-nogrid');
   });
 
   $('.product-item__btn').on('click', function () {
