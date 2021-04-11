@@ -202,6 +202,7 @@
     &__top-link{
       font-size: 14px;
       line-height: 16px;
+      margin-top: 9px;
     }
     &__items{
       grid-template-columns: repeat(1, 1fr);
@@ -211,6 +212,22 @@
     }
     &__content{
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .articles{
+    &__title{
+      font-size: 18px;
+    }
+    &__top-link{
+      text-align: center;
+    }
+    &__info-date,
+    &__info-author{
+      font-size: 10px;
+      line-height: 12px;
     }
   }
 }

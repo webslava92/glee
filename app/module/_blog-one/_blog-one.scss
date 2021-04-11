@@ -132,7 +132,7 @@
     width: 100%;
   }
   &__item--answer{
-    margin-left: 130px;
+    padding-left: 130px;
     border-top: 1px solid #e0e0e0;
     border-bottom: 1px solid #e0e0e0;
     width: 700px;
@@ -163,14 +163,17 @@
     @extend %Poppins-700;
     display: block;
     padding: 0;
+    width: 100%;
   }
   p.comments__item-date{
     font-size: 14px;
     line-height: 1;
     @extend %Rubik-400;
     color: #9e9e9e;
-    max-width: 110px;
+    max-width: 100%;
     margin: 0;
+    text-align: right;
+    margin-right: 130px;
   }
   p.comments__item-text{
     font-size: 16px;
@@ -385,6 +388,100 @@
   .articles__info-dateicon{
     path{
       fill: #9a9a9a;
+    }
+  }
+}
+@media (max-width: 1230px){
+  .blog-page.blog-one{
+    padding: 50px 0;
+  }
+  .articles__item{
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .comments__item--answer .comments__item-wrapper{
+    max-width: 100%;
+    width: 100%;
+  }
+  .comments__item--answer p.comments__item-text{
+    max-width: 100%;
+    width: 100%;
+  }
+  .comments p.comments__item-date{
+    margin-right: 0;
+  }
+  .comments{
+    padding: 20px 0;
+    &__form-input{
+      margin-left: 5px;
+    }
+    &__title{
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 900px){
+  .comments{
+    &__item-wrapper{
+      width: 100%;
+    }
+    &__item--answer{
+      max-width: 100%;
+      width: 100%;
+      padding-right: 30px;
+    }
+    &__item-text{
+      max-width: 100%;
+    }
+    &__form-inner{
+      width: 100%;
+    }
+    &__form-input{
+      width: 100%;
+    }
+  }
+  .blog-one {
+    p{
+      max-width: 100% !important;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 600px){
+  .comments{
+    &__item--answer{
+      padding-left: 40px;
+    }
+    &__item-box{
+      display: block;
+    }
+  }
+  .comments p.comments__item-date{
+    text-align: left;
+    margin-top: 15px;
+  }
+  .blog-one{
+    &__author-infobox{
+      display: block;
+    }
+    &__author-social{
+      margin-top: 15px;
+    }
+    &__author-img{
+      height: 100%;
+    }
+  }
+}
+
+@media (max-width: 460px){
+  .comments{
+    &__item-img{
+      display: none;
+    }
+    &__form-inner{
+      display: block;
     }
   }
 }
